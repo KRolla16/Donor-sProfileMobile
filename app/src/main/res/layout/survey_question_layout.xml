@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</TextView>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtNewImie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Imię i Nazwiko"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="24dp"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_singleLineEllipsis="true" />
+
+            <TextView
+                android:id="@+id/textViewQuestion1"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="1.Czy już oddawał/a Pan/Pani krew? Jeżeli tak to w którym roku ostatnio?" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtNewQue1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rok"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="24dp"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_singleLineEllipsis="true" />
+
+            <TextView
+                android:id="@+id/textViewQuestion2"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="2.Czy czuje się Pan/Pani obecnie zdrowy/a?" />
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+            <TextView
+                android:id="@+id/textViewQuestion3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3.Czy w ciągu ostatnich 7 dni przechodził/a Pan Pani jakieś zabiegi stomatologiczne?" />
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+            <TextView
+            android:id="@+id/textViewQuestion4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4.Czy w ciągu ostatnich 4 tygodni chorował/a Pan/Pani lub pozostawał/a pod opieką lekarza albo miał/a gorączkę powyższej 38 stopni? " />
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+            <TextView
+                android:id="@+id/textViewQuestion5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5.Czy w ciągu ostatnich 4 tygodni przyjmował/a Pan/Pani lekarstwa? Jakie?" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtNewQue5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Leki"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="24dp"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_singleLineEllipsis="true" />
+            <TextView
+                android:id="@+id/textViewQuestion6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6.Czy w ciągu ostatnich 4 tygodni przechodził/a Pan/Pani szczepienia? Jakie?" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtNewQue6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="szczepienia"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="24dp"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_singleLineEllipsis="true" />
+            <TextView
+                android:id="@+id/textViewQuestion7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7.Czy zauważył/a Pan/Pani u siebie następujące objawy:  nieuzasadniony spadek ciężaru ciała,
+nieuzasadnioną gorączkę powiększenie węzłów chłonnych?" />
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+            <TextView
+                android:id="@+id/textViewQuestion8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8.Czy choruje Pan/Pani bądź chorował/a na jedno z niżej wymienionych schorzeń, ewentualnie odczuwa lub odczuwał/a niżej wymienione dolegliwości?
+ choroby układu krążenia (nadciśnienie), dolegliwości ze strony serca, zawał serca, duszność, udar mózgu
+ choroby skóry, wypryski/wysypka, uczulenia, katar sienny, astma?
+ cukrzyca, choroby krwi, przedłużone krwawienia, choroby naczyń krwionośnych, choroby nerek, choroby układu pokarmowego, choroby płuc, choroby nerwowe, choroby tarczycy, padaczka, nowotwór, zapalenie szpiku.
+kiła, rzeżączka, toksoplazmoza, bruceloza, gruźlica, mononukleoza zakaźna?
+ gorączka Q, gorączka Zachodniego Nilu?
+" />
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+            <TextView
+                android:id="@+id/textViewQuestion9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9.Czy w ciągu ostatnich 6 miesięcy miał Pan/Pani wykonywaną gastroskopię, biopsję lub inne badanie diagnostyczne?	" />
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+
+            <TextView
+                android:id="@+id/textViewQuestion10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10.Czy w ciągu ostatnich 6 miesięcy lub od czasu ostatniego oddania krwi chorował/a Pan/Pani ciężko albo przebył/a poważny zabieg operacyjny lub wypadek?" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtNewQue10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Zabiegi/operacje"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="24dp"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_singleLineEllipsis="true" />
+
+            <TextView
+                android:id="@+id/textViewQuestion11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11.Czy kiedykolwiek otrzymywał/a Pan/Pani transfuzje krwi lub jej składników?	 " />
+            <Spinner
+                android:id="@+id/SpinnerAnswer11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+            <TextView
+                android:id="@+id/textViewQuestion12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12.Czy kiedykolwiek był/a Pan/Pani biorcą przeszczepu (np. rogówki lub innych tkanek?" />
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+            <TextView
+                android:id="@+id/textViewQuestion13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="13. Czy kiedykolwiek otrzymywał/a Pan/Pani hormon wzrostu?	" />
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+            <TextView
+                android:id="@+id/textViewQuestion14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="14.Czy ktokolwiek z Pana/Pani rodziny cierpi lub cierpiał na chorobę Creutzfeldta-Jakoba?	" />
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+            <TextView
+                android:id="@+id/textViewQuestion15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15.Czy Pan/Pani w okresie 01 stycznia 1980 roku do 31 grudnia 1996 roku przebywała łącznie przez okres 6 miesięcy lub dłużej w Wielkiej Brytanii, Francji lub Irlandii?" />
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+            <TextView
+                android:id="@+id/textViewQuestion16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="16.Czy w ciągu ostatnich 12 miesięcy przebywał Pan/Pani poza terenem Polski?" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtNewQue16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Miasto"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="24dp"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_singleLineEllipsis="true" />
+
+            <TextView
+                android:id="@+id/textViewQuestion17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="17.Czy w ciągu ostatnich 6 miesięcy przebywał Pan/Pani w krajach Afryki Środkowej i Zachodniej lub w Tajlandii?" />
+
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+            <TextView
+                android:id="@+id/textViewQuestion18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="18.Czy mieszkał/a Pan/Pani lub przebywał/a na terenach endemicznego występowania: malarii lub innych chorób tropikalnych." />
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+
+            <TextView
+                android:id="@+id/textViewQuestion19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="19.Czy chorował Pan/Pani na malarię?" />
+
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+            <TextView
+                android:id="@+id/textViewQuestion20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="20.Czy w ciągu ostatnich 28 dni przebywał Pan/Pani na terenach gdzie stwierdzono przypadki przeniesienia Wirusa Zachodniego Nilu na ludzi?" />
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+
+            <TextView
+                android:id="@+id/textViewQuestion21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="21.Czy w ciągu ostatnich 6 miesięcy wykonywano u Pana/Pani: tatuaż, akupunkturę, depilację kosmetyczną, przekłucia uszu lub innych części ciała, zabiegi kosmetyczne z naruszeniem powłok skórnych?" />
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+
+            <TextView
+                android:id="@+id/textViewQuestion22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="22.Czy w ciągu ostatnich 6 miesięcy lub od czasu ostatniego oddania krwi miał/a Pan/Pani
+przypadkowy kontakt z krwią ludzką lub narzędziami zanieczyszczonymi krwią ludzką?" />
+
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+            <TextView
+                android:id="@+id/textViewQuestion23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="23.Czy kiedykolwiek przechodził/a Pan/Pani żółtaczkę?" />
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+
+            <TextView
+                android:id="@+id/textViewQuestion24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="24.Czy Pana/Pani partner życiowy lub seksualny w ciągu ostatnich 6 miesięcy przechodził żółtaczkę?" />
+            <Spinner
+                android:id="@+id/SpinnerAnswer24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+
+
+            <TextView
+                android:id="@+id/textViewQuestion25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="25.Czy w ciągu ostatnich 12 miesięcy miał/a Pan/Pani kontakt z zakaźnie chorym?" />
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+
+            <TextView
+                android:id="@+id/textViewQuestion26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="26.Czy przeczytał i zrozumiał Pan/Pani „Informację o chorobach zakaźnych dla krwiodawców”?" />
+
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+            <TextView
+                android:id="@+id/textViewQuestion27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="27.Czy w ciągu ostatnich 6 miesięcy przebywał/a na Pan/Pani w areszcie lub więzieniu?" />
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+            <TextView
+                android:id="@+id/textViewQuestion28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="29.Czy kiedykolwiek zalecono Panu/Pani rezygnację z oddawania krwi?" />
+
+
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+            <TextView
+                android:id="@+id/textViewQuestion29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="29.Czy wykonuje Pan/Pani niebezpieczną pracę (np. kierowca autobusu, nurek) lub ma niebezpieczne
+hobby?" />
+
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+            <TextView
+                android:id="@+id/textViewQuestion30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="30.Czy jest Pani obecnie w ciąży lub była w ciąży w ciągu ostatnich 12 miesięcy lub od czasu
+ostatniej donacji krwi?" />
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+            <TextView
+                android:id="@+id/textViewQuestion31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="31.Czy Pani miesiączkuje? Jeżeli tak, to kiedy ostatnio?" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtNewQue31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Data"
+                android:inputType="textPassword"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="24dp"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_primaryColor="@color/colorPrimary"
+                app:met_singleLineEllipsis="true" />
+
+            <TextView
+                android:id="@+id/textViewQuestion32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="32.Czy w latach 1965 – 1985 otrzymywała Pani zastrzyki hormonów w celu leczenia niepłodności?" />
+
+            <Spinner
+                android:id="@+id/SpinnerAnswer32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/answers"></Spinner>
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.cardview.widget.CardView>

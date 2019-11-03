@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <array name="answers">
+        <item>Tak</item>
+        <item>Nie</item>
+    </array>
+    <array name="plec">
+        <item>Kobieta</item>
+        <item>Mężczyzna</item>
+    </array>
+    <array name="Krew">
+        <item>0 Rh+</item>
+        <item>0 Rh-</item>
+        <item>A Rh+</item>
+        <item>A Rh-</item>
+        <item>B Rh+</item>
+        <item>B Rh-</item>
+        <item>AB Rh+</item>
+        <item>AB Rh-</item>
+    </array>
+
+</resources>
